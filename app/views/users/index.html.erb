@@ -1,0 +1,12 @@
+<h1>Welcome to Pikchur</h1>
+
+
+<% @users.each do |user| %> 
+
+  <p> 
+    <%= user.email %> 
+    <br/> 
+  <%= link_to 'View Profile', user_path(user) %>
+  </p> 
+
+<% end %> 
